@@ -67,16 +67,38 @@
 // const users = [{name:'Alice',age:25},{name:'Bob',age:30}]
 // users.forEach(({name})=>console.log(name))
 
-// let obj ={
-//     firstName:'sumit',
-//     greet:function(){
-//         console.log('greeting')
-//     },
-//     age:41,
-//     address:{
-//         city:'jamshedpur'
-//     }
-// }
+let obj = {
+    firstName: 'sumit',
+    greet: function () {
+        console.log('greeting')
+    },
+    age: 41,
+    address: {
+        city: 'jamshedpur'
+    }
+}
 
 // let {firstName,age,address:{city}}=obj
 // console.log(firstName,age,city)
+
+let city = obj?.address?.city
+let cityData = city || "tata"
+//console.log(cityData)
+
+//console.log(Math.ceil(9.00))
+//console.log(Math.floor(9.95))
+
+const string1 = " A string primitive or literal "
+//console.log(string1)
+//console.log(string1.length)
+//console.log(string1.includes("the"))
+//console.log(string1.startsWith("A string"))
+//console.log(string1.endsWith("literal"))
+//console.log(string1.indexOf("or"))
+//console.log(string1.replace("or","and"))
+//console.log(string1.toUpperCase())
+//console.log(string1.toLocaleLowerCase())
+//console.log(string1.trim())
+//console.log(string1.trim().split(" "))
+let strArr = string1.trim().split(" ")
+console.log(strArr[3])
